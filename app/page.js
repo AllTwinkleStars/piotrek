@@ -1,5 +1,5 @@
 export default function Home() {
   return (
-    <main>Hello World</main>
+    <main>Hello from web</main>
   )
 }
