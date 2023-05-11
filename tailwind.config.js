@@ -16,7 +16,6 @@ module.exports = {
       },
       fontFamily: {
         sans: ['var(--font-poppins)'],
-        body: ['ff-meta-serif-web-pro', 'serif']
       },
     },
   },
