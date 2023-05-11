@@ -1,7 +1,14 @@
 import './globals.css'
-import { poppins } from './fonts';
 import NavBar from './components/header/NavBar'
 import Footer from './components/footer/Stopka'
+import { Poppins } from 'next/font/google';
+ 
+export const poppins = Poppins({
+  weight: '400',
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-poppins',
+});
 
 export const metadata = {
   title: 'Website project in NextJS + TailwindCSS',
