@@ -1,4 +1,5 @@
 import './globals.css'
+import { poppins } from './fonts';
 import NavBar from './components/header/NavBar'
 import Footer from './components/footer/Stopka'
 
@@ -38,7 +39,7 @@ const pages = [
 
 export default function RootLayout({ children }){
   return (
-    <html lang="pl">
+    <html lang="pl" className={`${poppins.variable}`}>
       <body className="bg-gradient-to-b from-maastricht-blue to-midnight-green px-20 py-10">
         <div className="h-screen bg-white">
           <NavBar pages={pages}

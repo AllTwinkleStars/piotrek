@@ -1,5 +1,5 @@
 export default function OkancelariiPage() {
     return (
-      <main>Hello from o kancelarii</main>
+      <main className="font-body">Hello from o kancelarii</main>
     )
   }

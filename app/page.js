@@ -8,8 +8,8 @@ export default function Home() {
   const router = useRouter();
 
   return (
-    <div>
-      <h1>HOME</h1>
+    <div className='prose'>
+      <h1 className='font-serif font-thin'>HOME</h1>
       <button className='bg-red-200' onClick={()=>router.push("/cookies")}>Cookies</button>
     </div>
   )

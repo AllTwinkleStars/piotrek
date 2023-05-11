@@ -14,7 +14,13 @@ module.exports = {
         'sheen-gold': '#C8982C',
         'charcoal': '#333333',
       },
+      fontFamily: {
+        sans: ['var(--font-poppins)'],
+        body: ['ff-meta-serif-web-pro', 'serif']
+      },
     },
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/typography'),
+  ],
 }
