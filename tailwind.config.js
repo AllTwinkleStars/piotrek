@@ -17,6 +17,9 @@ module.exports = {
       fontFamily: {
         sans: ['var(--font-poppins)'],
       },
+      fontWeight: {
+        extrathin: '50',
+      }
     },
   },
   plugins: [

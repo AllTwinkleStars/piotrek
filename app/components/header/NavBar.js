@@ -13,7 +13,7 @@ export default function NavBar({pages}) {
 
         return (
                 <Link 
-                    className={isActive ? "text-blue-500" : ""}
+                    className={isActive ? "border-b-4 border-sheen-gold pb-2" : ""}
                     key={page.id} 
                     href={page.href}>{page.name}
                 </Link>
@@ -24,8 +24,8 @@ export default function NavBar({pages}) {
     console.log(pathname);
  return(
     <nav>
-        <div className="py-4 px-16 mx-auto border border-red-400 bg-slate-400">
-            <div className="flex justify-end gap-x-4">
+        <div className="mx-auto">
+            <div className="flex justify-end gap-x-6 font-bold">
                 {menuItems}
                 
 
