@@ -31,7 +31,7 @@ const pages = [
 
 export default function Header(){
     return(
-        <div className='flex justify-between text-rich-black'>
+        <div className='flex justify-between mb-12 border border-red-500'>
             <Logo />
             <NavBar pages={pages}/>
         </div>

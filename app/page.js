@@ -1,16 +1,22 @@
-'use client';
- 
-import { useRouter } from 'next/navigation';
+import Photo from './components/main/Photo'
+import ContactDetails from './components/main/Contact-details'
+import MainText from './components/main/Main-text'
+import SpecjalizacjeTable from './components/main/Specjalizacje-table'
 
 export default function Home() {
 
-  const zmienna = "Jestem Dupa ze zmiennej"
-  const router = useRouter();
-
   return (
-    <div className='prose'>
-      <h1 className='font-serif font-thin'>HOME</h1>
-      <button className='bg-red-200' onClick={()=>router.push("/cookies")}>Cookies</button>
+    <div className='grid grid-flow-col justify-between border gap-20 border-blue-600 '>
+      <div>
+        <Photo />
+        <ContactDetails />
+      </div>
+      <div>
+        <MainText />
+      </div>
+      <div>
+        <SpecjalizacjeTable />
+      </div>
     </div>
   )
 }

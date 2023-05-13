@@ -17,8 +17,11 @@ module.exports = {
       fontFamily: {
         sans: ['var(--font-poppins)'],
       },
-      fontWeight: {
-        extrathin: '50',
+      width: {
+        '150': '600px',
+      },
+      maxWidth: {
+        'piotrek-max': '1366px',
       }
     },
   },
