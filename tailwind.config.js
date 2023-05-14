@@ -19,9 +19,20 @@ module.exports = {
       },
       width: {
         '150': '600px',
+        '55': '220px'
+      },
+      height: {
+        '55': '220px',
       },
       maxWidth: {
         'piotrek-max': '1366px',
+      },
+      fontSize: {
+        'logo': '22px',
+        'nav': '14px',
+      },
+      margin: {
+        'logo': '29px',
       }
     },
   },

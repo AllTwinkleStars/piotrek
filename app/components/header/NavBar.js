@@ -25,7 +25,7 @@ export default function NavBar({pages}) {
  return(
     <nav>
         <div className="mx-auto">
-            <div className="flex justify-end gap-x-6 font-bold">
+            <div className="flex justify-end gap-x-6 font-bold text-nav tracking-wide">
                 {menuItems}
                 
 
