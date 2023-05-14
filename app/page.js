@@ -1,7 +1,7 @@
 import Photo from './components/main/Photo'
 import ContactDetails from './components/main/Contact-details'
 import MainText from './components/main/Main-text'
-import SpecjalizacjeTable from './components/main/Specjalizacje-table'
+import SpecializationsMenu from './components/main/Specializations-menu'
 
 export default function Home() {
 
@@ -15,7 +15,7 @@ export default function Home() {
         <MainText />
       </div>
       <div>
-        <SpecjalizacjeTable />
+        <SpecializationsMenu />
       </div>
     </div>
   )
