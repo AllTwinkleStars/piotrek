@@ -34,13 +34,8 @@ const pages = [
 export default function Header() {
 
   return (
-    <div className="flex justify-between mb-12">
-      <div className="z-50">
-        <Logo />
-      </div>
       <div>
         <NavBar pages={pages} />
       </div>
-    </div>
   );
 }

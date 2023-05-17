@@ -14,32 +14,43 @@ export default function NavBar({pages}) {
 
     const menuItems = pages.map(page => {
 
-        const isActive = pathname === page.href ? true : false;
+        const isClicked = pathname === page.href ? true : false;
 
         return (
                 <Link 
-                    className={isActive ? "border-b-4 border-sheen-gold pb-2" : ""}
+                    className={isClicked ? "border-b-4 border-sheen-gold pb-2" : ""}
                     key={page.id} 
                     href={page.href}>{page.name}
                 </Link>
             )
     })
 
-    const [active,setActive] = useState();
+    const [active,setActive] = useState(false);
 
     return(
         <nav>
-            <div className="mx-auto">
-                <div className="justify-end gap-x-5 font-bold text-nav uppercase tracking-wide leading-7 hidden xl:flex">
+            {/* closed Navbar */}
+            <div className="flex justify-between mb-12">
+                <div className="border-t-4 border-sheen-gold pt-7 mt-[36px]">
+                    <Logo />
+                </div>
+                <div className="h-[40px] justify-end gap-x-5 font-bold text-nav uppercase tracking-wide leading-7 hidden xl:flex">
                     {menuItems}
                 </div>
                 <div className='xl:hidden' onClick={() => setActive(!active)}>
                     <HamIcon/>
                 </div>
             </div>
+            {/* opened Navbar */}
             <div>
-                <div className={active ? "top-0 right-0 w-screen h-full bg-blue-500 absolute px-[136px] py-20":"hidden"}>
-                    <div className='w-7 h-6 absolute right-[136px]' onClick={() => setActive(!active)}>
+                <div className={
+                    active 
+                        ? "flex justify-between top-0 fixed right-0 w-[100%] h-full bg-sheen-gold  px-[136px] py-20 text-white xl:hidden ease-in-out duration-300"
+                        : "flex justify-between top-0 fixed right-[-100%] w-[100%] h-full px-[136px] py-20 ease-in-out duration-300 bg-sheen-gold text-white xl:hidden"}>
+                    <div>
+                        <Logo />
+                    </div>
+                    <div className='w-7 h-6' onClick={() => setActive(!active)}>
                         <XIcon/>
                     </div>
                 </div>
