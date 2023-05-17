@@ -27,6 +27,8 @@ export default function NavBar({pages}) {
 
     const [active,setActive] = useState(false);
 
+    const position = active ? '0' : '[-100%]'
+
     return(
         <nav>
             {/* closed Navbar */}
@@ -43,10 +45,7 @@ export default function NavBar({pages}) {
             </div>
             {/* opened Navbar */}
             <div>
-                <div className={
-                    active 
-                        ? "flex justify-between top-0 fixed right-0 w-[100%] h-full bg-sheen-gold  px-[136px] py-20 text-white xl:hidden ease-in-out duration-300"
-                        : "flex justify-between top-0 fixed right-[-100%] w-[100%] h-full px-[136px] py-20 ease-in-out duration-300 bg-sheen-gold text-white xl:hidden"}>
+                <div className={`flex justify-between top-0 fixed w-[100%] h-full px-[136px] py-20  bg-sheen-gold text-white xl:hidden ease-in-out duration-300 right-${position}`}>
                     <div>
                         <Logo />
                     </div>
