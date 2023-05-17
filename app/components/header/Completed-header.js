@@ -34,8 +34,6 @@ const pages = [
 export default function Header() {
 
   return (
-      <div>
         <NavBar pages={pages} />
-      </div>
   );
 }
