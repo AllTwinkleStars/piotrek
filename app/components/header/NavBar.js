@@ -45,7 +45,7 @@ export default function NavBar({pages}) {
             </div>
             {/* opened Navbar */}
             <div>
-                <div className={`flex justify-between top-0 fixed w-[100%] h-full px-[56px] py-10   bg-sheen-gold text-white lg:hidden ease-in-out duration-300 right-${position}`}>
+                <div className={`flex justify-between top-0 fixed w-[100%] h-full px-[56px] py-10  border-t-4 border-sheen-gold bg-sheen-gold text-white lg:hidden ease-in-out duration-300 right-[-100%]`}>
                     <div>
                         <Logo />
                     </div>
