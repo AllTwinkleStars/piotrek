@@ -25,7 +25,7 @@ export default function NavBar({pages}) {
             )
     })
 
-    const [active,setActive] = useState(true);
+    const [active,setActive] = useState(false);
 
     return(
         <nav>
