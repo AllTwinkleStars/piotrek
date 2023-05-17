@@ -30,7 +30,7 @@ export default function NavBar({pages}) {
     return(
         <nav>
             {/* closed Navbar */}
-            <div className="flex justify-between mb-12">
+            <div className="flex justify-between mb-12 px-14">
                 <div className="lg:border-t-4 border-sheen-gold lg:pt-7 lg:mt-[36px]">
                     <Logo />
                 </div>
@@ -43,7 +43,7 @@ export default function NavBar({pages}) {
             </div>
             {/* opened Navbar */}
             <div>
-                <div className={`flex justify-between top-0 fixed w-[100%] h-full px-[56px] py-10 border-t-4 border-sheen-gold bg-sheen-gold text-white lg:hidden ease-in-out duration-300 right-${active ? '0' : '[-100%]'}`}>
+                <div className={`flex justify-between top-0 fixed w-[100%] h-full px-[56px] py-10 border-t-4 border-sheen-gold bg-sheen-gold text-white lg:hidden ease-in-out duration-300  ${active ? 'translate-x-0' : 'translate-x-full'}`}>
                 {/* <div className={active
                 ? "flex justify-between top-0 fixed w-[100%] h-full px-[56px] py-10 border-t-4 border-sheen-gold bg-sheen-gold text-white lg:hidden ease-in-out duration-300 right-0"
                 : "flex justify-between top-0 fixed w-[100%] h-full px-[56px] py-10 border-t-4 border-sheen-gold bg-sheen-gold text-white lg:hidden ease-in-out duration-300 right-[-100vw]"}> */}
