@@ -38,7 +38,9 @@ export default function RootLayout({ children }) {
               </div>
             </div>
           </div>
-          <Footer />
+          <div class="hidden lg:block">
+            <Footer />
+          </div>
         </div>
       </body>
     </html>

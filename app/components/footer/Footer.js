@@ -8,9 +8,9 @@ export default function Footer() {
             </div>
             <div className="flex gap-x-2 py-5 text-white">
                 <Link href="/regulamin-strony"><span className="text-xs">Regulamin Strony</span></Link>
-                <p>|</p>
+                <span>|</span>
                 <Link href="/polityka-prywatnosci"><span className="text-xs">Polityka Prywatności</span></Link>
-                <p>|</p>
+                <span>|</span>
                 <Link href="/cookies"><span className="text-xs">Cookies</span></Link>
             </div>
         </div>

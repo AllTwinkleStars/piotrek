@@ -24,10 +24,6 @@ module.exports = {
       height: {
         '55': '220px',
       },
-      fontSize: {
-        'logo': '22px',
-        'nav': '14px',
-      },
     },
   },
   plugins: [
