@@ -11,27 +11,27 @@ const specializations = [
     {
         id: '2',
         name: 'Prawo Rodzinne',
-        href: '/specjalizacje/prawo-cywilne'
+        href: '/specjalizacje/prawo-rodzinne'
     },
     {
         id: '3',
         name: 'Odszkodowania',
-        href: '/specjalizacje/prawo-cywilne'
+        href: '/specjalizacje/odszkodowania'
     },
     {
         id: '4',
         name: 'Ksigi Wieczyste i Hipoteka',
-        href: '/specjalizacje/prawo-cywilne'
+        href: '/specjalizacje/ksiegi-wieczyste-i-hipoteka'
     },
     {
         id: '5',
         name: 'Postępowanie Egzekucyjne',
-        href: '/specjalizacje/prawo-cywilne'
+        href: '/specjalizacje/postepowanie-egzekucyjne'
     },
     {
         id: '6',
         name: 'Prawo Bankowe i Spółdzielcze',
-        href: '/specjalizacje/prawo-cywilne'
+        href: '/specjalizacje/prawo-bankowe-i-spoldzielcze'
     },
 ]
 
