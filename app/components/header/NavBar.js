@@ -53,7 +53,7 @@ export default function NavBar({pages}) {
                 <div className="h-9 justify-end gap-x-5 font-bold text-[14px] uppercase tracking-wide leading-7 hidden lg:flex">
                     {navMenuItems}
                 </div>
-                <div className='lg:hidden cursor-pointer' onClick={() => setActive(!active)}>
+                <div className='lg:hidden cursor-pointer self-start' onClick={() => setActive(!active)}>
                     <HamIcon/>
                 </div>
             </div>
