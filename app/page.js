@@ -1,7 +1,7 @@
 export default function Home() {
   return (
-    <main className="prose">
-      <h1>Adwokat Piotr Tomasz Woźniak</h1>
+    <main className="prose font-serif text-[18px]">
+      <h1 className="font-sans">Adwokat Piotr Tomasz Woźniak</h1>
       <p>
         Szanowni Państwo
       </p>

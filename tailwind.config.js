@@ -14,6 +14,7 @@ module.exports = {
       },
       fontFamily: {
         sans: ['var(--font-poppins)'],
+        serif: ['var(--font-ptserif)']
       },
       width: {
         '150': '600px',

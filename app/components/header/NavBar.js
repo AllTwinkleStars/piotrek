@@ -18,7 +18,7 @@ export default function NavBar({pages}) {
 
         return (
                 <Link 
-                    className={isClicked ? "border-b-4 border-pw-gold pb-2" : ""}
+                    className={isClicked ? "border-b-4 border-pw-gold" : ""}
                     key={page.id} 
                     href={page.href}>
                     {page.name}
@@ -46,11 +46,11 @@ export default function NavBar({pages}) {
     return(
         <nav>
             {/* closed Navbar */}
-            <div className="flex justify-between mb-12 px-5 md:px-14">
-                <div className="lg:border-t-4 border-pw-gold lg:pt-7 lg:mt-[36px]">
+            <div className="flex justify-between mb-12 px-5 md:px-14 pt-8">
+                <div className="lg:border-t-4 border-pw-gold lg:pt-8 lg:mt-9">
                     <Logo />
                 </div>
-                <div className="h-[40px] justify-end gap-x-5 font-bold text-[14px] uppercase tracking-wide leading-7 hidden lg:flex">
+                <div className="h-9 justify-end gap-x-5 font-bold text-[14px] uppercase tracking-wide leading-7 hidden lg:flex">
                     {navMenuItems}
                 </div>
                 <div className='lg:hidden cursor-pointer' onClick={() => setActive(!active)}>
