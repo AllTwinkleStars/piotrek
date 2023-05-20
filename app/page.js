@@ -1,7 +1,16 @@
+import Image from 'next/image';
+
 export default function Home() {
   return (
     <main className="prose font-serif text-[18px]">
       <h1 className="font-sans">Adwokat Piotr Tomasz Woźniak</h1>
+      <Image className='md:hidden'
+        src="/piotr-wozniak.jpg"
+        width={1000}
+        height={500}
+        quality={80}  
+        alt="Picture of the author"
+      />
       <p>
         Szanowni Państwo
       </p>
