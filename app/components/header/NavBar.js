@@ -18,7 +18,7 @@ export default function NavBar({pages}) {
 
         return (
                 <Link 
-                    className={isClicked ? "border-b-4 border-sheen-gold pb-2" : ""}
+                    className={isClicked ? "border-b-4 border-pw-gold pb-2" : ""}
                     key={page.id} 
                     href={page.href}>
                     {page.name}
@@ -36,7 +36,7 @@ export default function NavBar({pages}) {
                     key={page.id}
                     href={page.href}
                     onClick={() => setActive(!active)}>
-                    {page.name}
+                    {page.menu}
                 </Link>
             )
     })
@@ -47,7 +47,7 @@ export default function NavBar({pages}) {
         <nav>
             {/* closed Navbar */}
             <div className="flex justify-between mb-12 px-14">
-                <div className="lg:border-t-4 border-sheen-gold lg:pt-7 lg:mt-[36px]">
+                <div className="lg:border-t-4 border-pw-gold lg:pt-7 lg:mt-[36px]">
                     <Logo />
                 </div>
                 <div className="h-[40px] justify-end gap-x-5 font-bold text-[14px] uppercase tracking-wide leading-7 hidden lg:flex">
@@ -59,10 +59,10 @@ export default function NavBar({pages}) {
             </div>
             {/* opened Navbar */}
             <div>
-                <div className={`flex flex-col justify-between top-0 fixed w-[100%] h-full px-[56px] py-10 border-t-4 border-sheen-gold bg-sheen-gold text-white lg:hidden ease-in-out duration-300 ${active ? 'translate-x-0' : 'translate-x-full'}`}>
+                <div className={`flex flex-col justify-between top-0 fixed w-[100%] h-full px-[56px] py-10 border-t-4 border-pw-gold bg-pw-gold text-white lg:hidden ease-in-out duration-300 ${active ? 'translate-x-0' : 'translate-x-full'}`}>
                 {/* <div className={active
-                ? "flex justify-between top-0 fixed w-[100%] h-full px-[56px] py-10 border-t-4 border-sheen-gold bg-sheen-gold text-white lg:hidden ease-in-out duration-300 right-0"
-                : "flex justify-between top-0 fixed w-[100%] h-full px-[56px] py-10 border-t-4 border-sheen-gold bg-sheen-gold text-white lg:hidden ease-in-out duration-300 right-[-100vw]"}> */}
+                ? "flex justify-between top-0 fixed w-[100%] h-full px-[56px] py-10 border-t-4 border-pw-gold bg-pw-gold text-white lg:hidden ease-in-out duration-300 right-0"
+                : "flex justify-between top-0 fixed w-[100%] h-full px-[56px] py-10 border-t-4 border-pw-gold bg-pw-gold text-white lg:hidden ease-in-out duration-300 right-[-100vw]"}> */}
                     <div className='flex justify-between'>
                         <div>
                             <Logo />
@@ -74,7 +74,7 @@ export default function NavBar({pages}) {
                     <div className='flex flex-col gap-8'>
                         {hamMenuItems}           
                     </div>
-                    <div className='flex justify-between opacity-50'>
+                    <div className='flex justify-between text-opacity-50'>
                         <p>ul. Kielecka 6 <br/> 31-516 Kraków</p>
                         <p>tel. +48 601 177 604 <br/> piotrwozniak@post.pl</p>
                     </div>

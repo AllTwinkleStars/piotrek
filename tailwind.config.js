@@ -11,7 +11,7 @@ module.exports = {
         'maastricht-blue': '#002A35',
         'midnight-green': '#014455',
         'rich-black': '#003644',
-        'sheen-gold': '#C8982C',
+        'pw-gold': '#C8982C',
         'charcoal': '#333333',
       },
       fontFamily: {

@@ -21,11 +21,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="pl" className={`${poppins.variable}`}>
-      <body className="bg-gradient-to-b from-maastricht-blue to-midnight-green p-0 lg:px-10 xl:px-20 lg:py-10">
+      <body className="border-t-8 border-pw-gold">
         <div className="max-w-[1366px] mx-auto">
           <div className="h-screen bg-white py-10 text-rich-black">
             <Header />
-            <div className="flex justify-between xl:gap-20 gap-10 px-14">
+            <div className="flex justify-between xl:gap-20 gap-9 px-14">
               <div>
                 <Photo />
                 <ContactDetails />
@@ -38,9 +38,9 @@ export default function RootLayout({ children }) {
               </div>
             </div>
           </div>
-          <div class="hidden lg:block">
+        </div>
+        <div class="bg-pw-gold hidden lg:block">
             <Footer />
-          </div>
         </div>
       </body>
     </html>
