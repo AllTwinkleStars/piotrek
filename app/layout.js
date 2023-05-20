@@ -36,7 +36,7 @@ export default function RootLayout({ children }) {
             <div className="flex justify-between gap-10 xl:gap-20 px-5 md:px-14 pb-10">
 
               {/* left column */}
-              <div className="hidden md:flex flex-col gap-y-6 shrink-0 w-55">
+              <div className="hidden md:flex flex-col gap-y-10 shrink-0 w-55">
                 <Photo />
                 <ContactDetails />
               </div>
@@ -50,7 +50,7 @@ export default function RootLayout({ children }) {
                 <div className="lg:hidden">
                   <SpecializationsMenu />
                 </div>
-                <div className="md:hidden">
+                <div className="md:hidden text-center">
                   <ContactDetails />
                 </div>
               </div>

@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function Photo(){
     return (
-        <div className="h-55 w-full bg-red-600">
+        <div className="h-55 w-full">
             <Image className='object-cover aspect-square'
             src="/piotr-wozniak.jpg"
             width={1000}
