@@ -43,9 +43,9 @@ export default function RootLayout({ children }) {
 
               {/* main column */}
               <div className="flex flex-col w-full gap-y-10">
-                <div className="flex md:hidden">
+                {/* <div className="flex md:hidden">
                   <Photo />
-                </div>
+                </div> */}
                 {children}
                 <div className="lg:hidden">
                   <SpecializationsMenu />
