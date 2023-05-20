@@ -1,4 +1,4 @@
-export default function ArtykulyPage() {
+export default function PolitykaPrywatnosciPage() {
     return (
       <main>Hello from polityka prywatności</main>
     )

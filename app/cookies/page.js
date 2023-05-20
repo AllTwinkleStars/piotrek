@@ -1,4 +1,4 @@
-export default function ArtykulyPage() {
+export default function CookiesPage() {
     return (
       <main>Hello from cookies</main>
     )
