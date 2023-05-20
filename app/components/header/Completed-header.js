@@ -1,12 +1,11 @@
 'use client';
 
 import NavBar from "./NavBar";
-import Logo from "./Logo";
 
 const pages = [
   {
     id: "1",
-    name: "Adwokat Piotr T. Woźniak",
+    name: "Adw. Piotr T. Woźniak",
     menu: "Adwokat Piotr T. Woźniak",
     href: "/",
   },

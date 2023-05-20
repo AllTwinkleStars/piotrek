@@ -1,5 +1,8 @@
 export default function OkancelariiPage() {
     return (
-      <main className="font-body">Hello from o kancelarii</main>
+      <main className="prose">
+        <h1>O Kancelarii</h1>
+        <p>Text</p>
+      </main>
     )
   }

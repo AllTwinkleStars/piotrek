@@ -8,11 +8,9 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'maastricht-blue': '#002A35',
-        'midnight-green': '#014455',
-        'rich-black': '#003644',
+        'pw-green': '#095164',
         'pw-gold': '#C8982C',
-        'charcoal': '#333333',
+        'charcoal': '#001C23',
       },
       fontFamily: {
         sans: ['var(--font-poppins)'],

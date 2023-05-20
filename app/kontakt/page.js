@@ -1,5 +1,8 @@
 export default function KontaktPage() {
     return (
-      <main>Hello from kontakt</main>
+      <main className="prose">
+        <h1>Kontakt</h1>
+        <p>Text</p>
+      </main>
     )
   }

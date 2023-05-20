@@ -1,5 +1,8 @@
 export default function ArtykulyPage() {
     return (
-      <main>Hello from artykuly</main>
+      <main className="prose">
+        <h1>Artykuły</h1>
+        <p>Text</p>
+      </main>
     )
   }
