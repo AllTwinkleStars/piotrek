@@ -2,8 +2,8 @@ import Image from 'next/image';
 
 export default function Home() {
   return (
-    <main className="prose font-serif text-[18px]">
-      <h1 className="font-sans">Adwokat Piotr Tomasz Woźniak</h1>
+    <main className="prose prose-h1:text-2xl prose-h1:text-pw-gold prose-h1:mb-12 font-serif text-[18px] border-t-pw-gold border-t-4 pt-8">
+      <h1 className="font-serif font-normal">Adwokat Piotr Tomasz Woźniak</h1>
       <Image className='md:hidden'
         src="/piotr-wozniak.jpg"
         width={1000}
