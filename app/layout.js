@@ -28,7 +28,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="pl" className={`${poppins.variable} ${ptserif.variable}`}>
-      <body className="border-t-[16px] border-pw-gold">
+      <body className="border-t-[16px] border-pw-gold overscroll-none">
         <div className="max-w-[1366px] mx-auto">
           <div className="bg-white text-pw-green">
             <Header />

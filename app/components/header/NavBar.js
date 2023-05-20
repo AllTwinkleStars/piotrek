@@ -32,7 +32,7 @@ export default function NavBar({pages}) {
 
         return (
                 <Link 
-                    className={`border-b-2 border-b-white/50 text-[24px] font-bold tracking-wide py-2 ${isClicked ? "opacity-50" : ""}`}
+                    className={`border-b-2 border-b-white/50 text-[24px] font-bold font-serif tracking-wide py-1 ${isClicked ? "opacity-50" : ""}`}
                     key={page.id}
                     href={page.href}
                     onClick={() => setActive(!active)}>
@@ -57,12 +57,10 @@ export default function NavBar({pages}) {
                     <HamIcon/>
                 </div>
             </div>
+
             {/* opened Navbar */}
             <div>
-                <div className={`flex flex-col justify-between top-0 fixed w-[100%] h-full px-5 md:px-[56px] py-[56px] border-t-4 border-pw-gold bg-pw-gold text-white lg:hidden ease-in-out duration-300 ${active ? 'translate-x-0' : 'translate-x-full'}`}>
-                {/* <div className={active
-                ? "flex justify-between top-0 fixed w-[100%] h-full px-[56px] py-10 border-t-4 border-pw-gold bg-pw-gold text-white lg:hidden ease-in-out duration-300 right-0"
-                : "flex justify-between top-0 fixed w-[100%] h-full px-[56px] py-10 border-t-4 border-pw-gold bg-pw-gold text-white lg:hidden ease-in-out duration-300 right-[-100vw]"}> */}
+                <div className={`flex flex-col justify-between top-0 fixed w-[100%] h-full px-5 md:px-[56px] pt-[48px] pb-4 bg-pw-gold text-white lg:hidden ease-in-out duration-300 ${active ? 'translate-x-0' : 'translate-x-full'}`}>
                     <div className='flex justify-between'>
                         <div>
                             <Logo />
