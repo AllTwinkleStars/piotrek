@@ -69,7 +69,7 @@ export default function NavBar({pages}) {
                             <XIcon/>
                         </div>
                     </div>
-                    <div className='flex flex-col gap-8'>
+                    <div className='flex flex-col gap-5'>
                         {hamMenuItems}           
                     </div>
                     <div className='flex justify-between text-opacity-50'>
