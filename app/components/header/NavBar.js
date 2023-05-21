@@ -32,7 +32,7 @@ export default function NavBar({pages}) {
 
         return (
                 <Link 
-                    className={`border-b-2 border-b-white/50 text-[24px] font-bold font-serif tracking-wide py-1 ${isClicked ? "opacity-50" : ""}`}
+                    className={`border-b border-b-white/50 text-[24px] font-serif tracking-wide py-1 ${isClicked ? "opacity-50" : ""}`}
                     key={page.id}
                     href={page.href}
                     onClick={() => setActive(!active)}>

@@ -20,7 +20,7 @@ const specializations = [
     },
     {
         id: '4',
-        name: 'Ksigi Wieczyste i Hipoteka',
+        name: 'Księgi Wieczyste i Hipoteka',
         href: '/specjalizacje/ksiegi-wieczyste-i-hipoteka'
     },
     {
@@ -40,7 +40,7 @@ export default function SpecializationsMenu(){
     const menuItems = specializations.map(specialization => {
         return (
             <Link 
-                className="border-t-2 border-pw-gold py-3"
+                className="border-t border-pw-gold py-3"
                 key={specialization.id} 
                 href={specialization.href}>
                 {specialization.name}
@@ -49,9 +49,9 @@ export default function SpecializationsMenu(){
     })
 
     return (
-        <div className="flex flex-col w-full h-fit pt-8 uppercase font-bold border-t-4 border-b-2 border-pw-gold">
-            <h1 className="text-pw-gold pb-4 text-[18px]">specjalizacje</h1>
-            <div className="text-[14px] flex flex-col">
+        <div className="flex flex-col w-full h-fit pt-8 uppercase font-bold border-t-4 border-b border-pw-gold">
+            <h1 className="text-pw-gold pb-4 text-lg tracking-wide">Specjalizacje</h1>
+            <div className="text-sm flex flex-col">
                 {menuItems}
             </div>
         </div>

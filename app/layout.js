@@ -21,14 +21,14 @@ export const ptserif = PT_Serif({
 });
 
 export const metadata = {
-  title: "Website project in NextJS + TailwindCSS",
+  title: "Kancelaria Adwokacka Piotr Tomasz Woźniak | Kraków ",
   description: "Created by Jasiek",
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="pl" className={`${poppins.variable} ${ptserif.variable}`}>
-      <body className="border-t-[16px] border-pw-gold overscroll-none">
+      <body className="border-t-[16px] border-pw-gold">
         <div className="max-w-[1366px] mx-auto">
           <div className="bg-white text-pw-green">
             <Header />
@@ -43,9 +43,6 @@ export default function RootLayout({ children }) {
 
               {/* main column */}
               <div className="flex flex-col w-full gap-y-10">
-                {/* <div className="flex md:hidden">
-                  <Photo />
-                </div> */}
                 {children}
                 <div className="lg:hidden">
                   <SpecializationsMenu />
@@ -64,7 +61,7 @@ export default function RootLayout({ children }) {
           </div>
         </div>
 
-        <div class="bg-pw-gold hidden lg:block mt-8">
+        <div className="bg-pw-gold hidden lg:block mt-8">
           <Footer />
         </div>
 
