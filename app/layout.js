@@ -1,3 +1,4 @@
+import { MenuContextProvider } from "./context/menu";
 import "./globals.css";
 import Header from "./components/header/Completed-header";
 import Footer from "./components/footer/Footer";
@@ -28,44 +29,43 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="pl" className={`${poppins.variable} ${ptserif.variable}`}>
-      <body className="border-t-[16px] border-pw-gold">
-        <div className="max-w-[1366px] mx-auto">
-          <div className="bg-white text-pw-green">
-            <Header />
-            
-            <div className="flex justify-between gap-10 xl:gap-20 px-5 md:px-14 pb-10">
+      <MenuContextProvider>
+        <body className="border-t-[16px] border-pw-gold overscroll-none">
+          <div className="max-w-[1366px] mx-auto">
+            <div className="bg-white text-pw-green">
+              <Header />
 
-              {/* left column */}
-              <div className="hidden md:flex flex-col gap-y-10 shrink-0 w-55">
-                <Photo />
-                <ContactDetails />
-              </div>
-
-              {/* main column */}
-              <div className="flex flex-col w-full gap-y-10">
-                {children}
-                <div className="lg:hidden">
-                  <SpecializationsMenu />
-                </div>
-                <div className="md:hidden text-center">
+              <div className="flex justify-between gap-10 xl:gap-20 px-5 md:px-14 pb-10">
+                {/* left column */}
+                <div className="hidden md:flex flex-col gap-y-10 shrink-0 w-55">
+                  <Photo />
                   <ContactDetails />
                 </div>
-              </div>
 
-              {/* right column */}
-              <div className="hidden lg:block shrink-0 w-55">
-                <SpecializationsMenu />
-              </div>
+                {/* main column */}
+                <div className="flex flex-col w-full gap-y-10">
+                  {children}
+                  <div className="lg:hidden">
+                    <SpecializationsMenu />
+                  </div>
+                  <div className="md:hidden text-center">
+                    <ContactDetails />
+                  </div>
+                </div>
 
+                {/* right column */}
+                <div className="hidden lg:block shrink-0 w-55">
+                  <SpecializationsMenu />
+                </div>
+              </div>
             </div>
           </div>
-        </div>
 
-        <div className="bg-pw-gold hidden lg:block mt-8">
-          <Footer />
-        </div>
-
-      </body>
+          <div className="bg-pw-gold hidden lg:block mt-8">
+            <Footer />
+          </div>
+        </body>
+      </MenuContextProvider>
     </html>
   );
 }
