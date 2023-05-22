@@ -13,7 +13,7 @@ module.exports = {
         'charcoal': '#001C23',
       },
       fontFamily: {
-        sans: ['var(--font-poppins)'],
+        sans: ['var(--font-sora)'],
         serif: ['var(--font-ptserif)']
       },
       width: {

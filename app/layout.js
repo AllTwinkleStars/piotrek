@@ -4,14 +4,14 @@ import Header from "./components/header/Header";
 import Footer from "./components/footer/Footer";
 import Photo from "./components/main/Photo";
 import ContactDetails from "./components/main/ContactDetails";
-import SpecializationsMenu from "./components/main/SpecializationsMenu";
-import { Poppins, PT_Serif } from "next/font/google";
+import SpecializationsMenu from "./components/main/SpecializationsList";
+import { Sora, PT_Serif } from "next/font/google";
 
-export const poppins = Poppins({
-  weight: ["400", "700"],
+export const sora = Sora({
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800"],
   subsets: ["latin"],
   display: "swap",
-  variable: "--font-poppins",
+  variable: "--font-sora",
 });
 
 export const ptserif = PT_Serif({
@@ -28,7 +28,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="pl" className={`${poppins.variable} ${ptserif.variable}`}>
+    <html lang="pl" className={`${sora.variable} ${ptserif.variable}`}>
       <MenuContextProvider>
         <body className="border-t-[16px] border-pw-gold overscroll-none">
           <div className="max-w-[1366px] mx-auto">
