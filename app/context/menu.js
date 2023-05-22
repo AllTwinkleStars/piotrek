@@ -7,6 +7,8 @@ const MenuContext = createContext({})
 export const MenuContextProvider = ({ children }) => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
+    // console.log(isMenuOpen)
+
     return (
         <MenuContext.Provider value={{ isMenuOpen, setIsMenuOpen }}>
             {children}

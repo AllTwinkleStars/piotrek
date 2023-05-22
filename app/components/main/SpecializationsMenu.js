@@ -51,7 +51,7 @@ export default function SpecializationsMenu(){
     return (
         <div className="flex flex-col w-full h-fit pt-8 uppercase font-bold border-t-4 border-b border-pw-gold">
             <h1 className="text-pw-gold pb-4 text-lg tracking-wide">Specjalizacje</h1>
-            <div className="text-sm flex flex-col">
+            <div className="text-pw-green text-sm flex flex-col">
                 {menuItems}
             </div>
         </div>

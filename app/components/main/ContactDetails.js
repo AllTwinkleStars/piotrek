@@ -1,6 +1,6 @@
 export default function ContactDetails(){
     return (
-        <div className="h-55 w-full self-center border-t-4 border-pw-gold pt-8">
+        <div className="text-pw-green h-55 w-full self-center border-t-4 border-pw-gold pt-8">
             <p>                
             ul. Kielecka 6<br/>
             31-516 Kraków<br/>

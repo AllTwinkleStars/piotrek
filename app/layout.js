@@ -1,10 +1,10 @@
 import { MenuContextProvider } from "./context/menu";
 import "./globals.css";
-import Header from "./components/header/Completed-header";
+import Header from "./components/header/Header";
 import Footer from "./components/footer/Footer";
 import Photo from "./components/main/Photo";
-import ContactDetails from "./components/main/Contact-details";
-import SpecializationsMenu from "./components/main/Specializations-menu";
+import ContactDetails from "./components/main/ContactDetails";
+import SpecializationsMenu from "./components/main/SpecializationsMenu";
 import { Poppins, PT_Serif } from "next/font/google";
 
 export const poppins = Poppins({
@@ -32,7 +32,7 @@ export default function RootLayout({ children }) {
       <MenuContextProvider>
         <body className="border-t-[16px] border-pw-gold overscroll-none">
           <div className="max-w-[1366px] mx-auto">
-            <div className="bg-white text-pw-green">
+            <div>
               <Header />
 
               <div className="flex justify-between gap-10 xl:gap-20 px-5 md:px-14 pb-10">
