@@ -1,5 +1,5 @@
 'use client';
-
+// import { useState } from 'react';
 import { useMenuContext } from '@/app/context/menu';
 import { usePathname } from 'next/navigation';
 import Link from "next/link";
@@ -41,13 +41,15 @@ export default function NavBar({pages}) {
                     className={`text-[24px] font-sans font-light underline underline-offset-8  tracking-wide py-1 ${isClicked ? "decoration-pw-gold decoration-2" : "decoration-white decoration-1"}`}
                     key={page.id}
                     href={page.href}
-                    onClick={() => setActive(!active)}>
+                    onClick={() => setIsMenuOpen(!isMenuOpen)}>
                     {page.menu}
                 </Link>
             )
     })
 
     const { isMenuOpen, setIsMenuOpen } = useMenuContext();
+
+    // const [isMenuOpen, setIsMenuOpen] = useState(false)
 
     return(
         <nav>
@@ -56,11 +58,10 @@ export default function NavBar({pages}) {
                 <div className="text-pw-green lg:border-t-4 border-pw-gold lg:pt-8 lg:mt-9">
                     <Logo />
                 </div>
-                <div className="bg-white text-pw-green h-9 justify-end gap-x-5 font-bold text-[14px] uppercase tracking-wide leading-7 hidden lg:flex">
+                <div className="bg-white text-pw-green font-semibold  h-9 justify-end gap-x-5 text-[14px] uppercase tracking-wide leading-7 hidden lg:flex">
                     {navMenuItems}
                 </div>
                 <div className='lg:hidden cursor-pointer self-start' onClick={() => setIsMenuOpen(!isMenuOpen)}>
-
                     <IconHumburger />
                 </div>
             </div>

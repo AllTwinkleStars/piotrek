@@ -28,9 +28,9 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="pl" className={`${sora.variable} ${ptserif.variable}`}>
-      <MenuContextProvider>
-        <body className="border-t-[16px] border-pw-gold overscroll-none">
+    <MenuContextProvider>
+      <html lang="pl" className={`${sora.variable} ${ptserif.variable}`}>
+        <body className={`border-t-[16px] border-pw-gold overscroll-none`}>
           <div className="max-w-[1366px] mx-auto">
             <div>
               <Header />
@@ -61,11 +61,11 @@ export default function RootLayout({ children }) {
             </div>
           </div>
 
-          <div className="bg-pw-gold hidden lg:block mt-8">
+          <div className="hidden lg:block mt-8">
             <Footer />
           </div>
         </body>
-      </MenuContextProvider>
-    </html>
+      </html>
+    </MenuContextProvider>
   );
 }
