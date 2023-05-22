@@ -22,8 +22,8 @@ export const ptserif = PT_Serif({
 });
 
 export const metadata = {
-  title: "Kancelaria Adwokacka Piotr Tomasz Woźniak | Kraków ",
-  description: "Created by Jasiek",
+  title: "Adwokat Piotr Tomasz Woźniak | Kancelaria Adwokacka Piotr Tomasz Woźniak",
+  description: "Coś mądrego na temat kancelarii",
 };
 
 export default function RootLayout({ children }) {

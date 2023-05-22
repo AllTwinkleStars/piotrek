@@ -6,6 +6,7 @@ export default function Home() {
       <h1 className="font-serif font-normal">Adwokat Piotr Tomasz Woźniak</h1>
       <Image className='md:hidden'
         src="/piotr-wozniak.jpg"
+        priority = {true}
         width={1000}
         height={500}
         quality={80}  

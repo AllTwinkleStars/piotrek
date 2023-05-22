@@ -1,5 +1,6 @@
 'use client';
- 
+
+import { useMenuContext } from '@/app/context/menu';
 import { usePathname } from 'next/navigation';
 import Link from "next/link";
 import HamIcon from "./HamMenuIcon";
@@ -11,10 +12,19 @@ import { useState } from "react";
 export default function NavBar({pages}) {
 
     const pathname = usePathname();
+    
+
+    const checkPath = (page) => {
+        const regex = /\/.+(?=[/])|\/.*/i;
+        return pathname.match(regex)[0] === page.href ? true : false;
+    }
 
     const navMenuItems = pages.map(page => {
 
-        const isClicked = pathname === page.href ? true : false;
+        // console.log("pathname: ", pathname.match(regex))
+        // console.log("page.href: ", page.href)
+
+        const isClicked = checkPath(page);
 
         return (
                 <Link 
@@ -28,7 +38,7 @@ export default function NavBar({pages}) {
 
     const hamMenuItems = pages.map(page => {
 
-        const isClicked = pathname === page.href ? true : false;
+        const isClicked = checkPath(page);
 
         return (
                 <Link 
@@ -42,6 +52,8 @@ export default function NavBar({pages}) {
     })
 
     const [active,setActive] = useState(false);
+
+    const { isMenuOpen, setIsMenuopen } = useMenuContext();
 
     return(
         <nav>
