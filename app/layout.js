@@ -48,7 +48,7 @@ export default function RootLayout({ children }) {
                   <div className="lg:hidden">
                     <SpecializationsMenu />
                   </div>
-                  <div className="md:hidden text-center">
+                  <div className="md:hidden text-left">
                     <ContactDetails />
                   </div>
                 </div>
@@ -61,9 +61,9 @@ export default function RootLayout({ children }) {
             </div>
           </div>
 
-          <div className="hidden lg:block mt-8">
+          <footer className="hidden lg:block mt-8">
             <Footer />
-          </div>
+          </footer>
         </body>
       </html>
     </MenuContextProvider>
