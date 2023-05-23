@@ -73,13 +73,12 @@ export default function NavBar({pages}) {
                             <IconClose/>
                         </div>
                     </div>
-                    <div className='flex flex-col gap-4'>
+                    <div className='flex flex-col gap-3'>
                         {hamMenuItems}           
                     </div>
                     <div className='pb-8 font-light leading-7 text-white'>
                         <p>                
-                            ul. Kielecka 6<br/>
-                            31-516 Kraków<br/>
+                            ul. Kielecka 6, 31-516 Kraków<br/>
                             tel. +48 601 177 604<br/>
                             <a href="mailto:piotrwozniak@post.pl">
                                 piotrwozniak@post.pl
