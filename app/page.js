@@ -1,8 +1,11 @@
 import Image from 'next/image';
+import Link from 'next/link';
+
+
 
 export default function Home() {
   return (
-    <main className="prose prose-h1:text-2xl prose-h1:text-pw-gold prose-h1:mb-12 font-sans text-md leading-8  border-t-pw-gold border-t-4 pt-8">
+    <article className="pt-8 font-sans leading-8 prose border-t-4 prose-h1:text-2xl prose-h1:text-pw-gold prose-h1:mb-12 prose-a:text-pw-green prose-a:no-underline hover:prose-a:underline hover:prose-a:decoration-pw-gold hover:prose-a:decoration-1 hover:prose-a:underline-offset-4 text-md border-t-pw-gold">
       <h1 className="font-sans font-normal">Adwokat Piotr Tomasz Woźniak</h1>
       <Image className='md:hidden'
         src="/piotr-wozniak.jpg"
@@ -19,8 +22,7 @@ export default function Home() {
         Nazywam się Piotr Tomasz Woźniak. Jestem adwokatem od 2008 r.
         prowadzącym własną Kancelarię Adwokacką. Specjalizuję się w sprawach
         z zakresu prawa cywilnego i rodzinnego. Szczegółowy zakres spraw
-        prowadzonych przez moją Kancelarię znajdziecie Państwo w zakładce
-        specjalizacje.
+        prowadzonych przez moją Kancelarię znajdziecie Państwo w zakładce <Link href="/specjalizacje">specjalizacje</Link>.
       </p>
       <p>
         Udzielam pomocy prawnej na każdym etapie sprawy zarówno w postępowaniu
@@ -46,6 +48,6 @@ export default function Home() {
       <p>
         Pozostaję z poważaniem
       </p>
-    </main>
+    </article>
   );
 }
