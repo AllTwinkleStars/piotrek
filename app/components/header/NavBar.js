@@ -76,7 +76,7 @@ export default function NavBar({pages}) {
                     <div className='flex flex-col gap-2'>
                         {hamMenuItems}           
                     </div>
-                    <div className='pb-8 font-light leading-7 text-white'>
+                    <div className='pb-6 font-light leading-7 text-white'>
                         <p>                
                             ul. Kielecka 6, 31-516 Kraków<br/>
                             tel. +48 601 177 604<br/>
