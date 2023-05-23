@@ -36,7 +36,7 @@ export default function NavBar({pages}) {
 
         return (
             <Link 
-                className={`text-2xl font-sans font-extralight tracking-wide py-1 ${isClicked ? "underline underline-offset-8 decoration-pw-gold decoration-4" : ""}`}
+                className={`text-xl font-sans font-extralight tracking-wide py-1 ${isClicked ? "underline underline-offset-8 decoration-pw-gold decoration-4" : ""}`}
                 key={page.id}
                 href={page.href}
                 onClick={() => setIsMenuOpen(!isMenuOpen)}>
