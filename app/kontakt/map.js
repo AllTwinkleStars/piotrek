@@ -5,8 +5,7 @@ import { GoogleMap, useLoadScript, Marker } from "@react-google-maps/api";
 
 export default function Map() {
     const { isLoaded } = useLoadScript({
-        googleMapsApiKey: 'AIzaSyA12awGjqh7Y0xmEIAxW3MRgrvMSLcuS7w',
-        // googleMapsApiKey: process.env.NEXT_GOOGLE_MAPS_API_KEY,
+        googleMapsApiKey: process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY,
     });
 
     return <>{!isLoaded ? <div>Loading...</div> : <GMap />}</>;
@@ -26,7 +25,7 @@ function GMap() {
                     zoomControl: true,
                     streetViewControl: false,
                     fullscreenControl: true,
-                    mapTypeControl: false
+                    mapTypeControl: false,
                 }}
                 >
                 <Marker position={center} />
