@@ -5,7 +5,7 @@ import Link from 'next/link';
 
 export default function Home() {
   return (
-    <article className="pt-8 font-sans leading-8 prose border-t-4 prose-h1:text-2xl prose-h1:text-pw-gold prose-h1:mb-12 prose-a:text-pw-green prose-a:no-underline hover:prose-a:underline hover:prose-a:decoration-pw-gold hover:prose-a:decoration-1 hover:prose-a:underline-offset-4 text-md border-t-pw-gold">
+    <article className="pt-8 font-sans leading-8 prose border-t-4 prose-h1:text-2xl prose-h1:text-pw-gold prose-h1:mb-8 lg:prose-h1:mb-12 prose-a:text-pw-green prose-a:underline prose-a:decoration-1 hover:prose-a:decoration-2 prose-a:underline-offset-4 prose-a:decoration-pw-gold hover:prose-a:underline hover:prose-a:decoration-pw-gold text-md border-t-pw-gold">
       <h1 className="font-sans font-normal">Adwokat Piotr Tomasz Woźniak</h1>
       <Image className='md:hidden'
         src="/piotr-wozniak.jpg"
