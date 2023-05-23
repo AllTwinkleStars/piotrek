@@ -1,5 +1,4 @@
 'use client';
-// import { useState } from 'react';
 import { useMenuContext } from '@/app/context/menu';
 import { usePathname } from 'next/navigation';
 import Link from "next/link";
@@ -49,19 +48,17 @@ export default function NavBar({pages}) {
 
     const { isMenuOpen, setIsMenuOpen } = useMenuContext();
 
-    // const [isMenuOpen, setIsMenuOpen] = useState(false)
-
     return(
         <nav>
             {/* closed Navbar */}
-            <div className="flex justify-between mb-12 px-5 md:px-14 pt-8">
+            <div className="flex justify-between px-5 pt-8 mb-12 md:px-14">
                 <div className="text-pw-green lg:border-t-4 border-pw-gold lg:pt-8 lg:mt-9">
                     <Logo />
                 </div>
                 <div className="bg-white text-pw-green font-semibold  h-9 justify-end gap-x-5 text-[14px] uppercase tracking-wide leading-7 hidden lg:flex">
                     {navMenuItems}
                 </div>
-                <div className='lg:hidden cursor-pointer self-start' onClick={() => setIsMenuOpen(!isMenuOpen)}>
+                <div className='self-start cursor-pointer lg:hidden' onClick={() => setIsMenuOpen(!isMenuOpen)}>
                     <IconHumburger />
                 </div>
             </div>
@@ -73,7 +70,7 @@ export default function NavBar({pages}) {
                         <div>
                             <Logo />
                         </div>
-                        <div className='w-7 h-6 cursor-pointer' onClick={() => setIsMenuOpen(!isMenuOpen)}>
+                        <div className='h-6 cursor-pointer w-7' onClick={() => setIsMenuOpen(!isMenuOpen)}>
                             <IconClose/>
                         </div>
                     </div>
@@ -82,7 +79,7 @@ export default function NavBar({pages}) {
                     </div>
                     <div className='text-white'>
                         <p>ul. Kielecka 6, 31-516 Kraków</p>
-                        <p>tel. +48 601 177 604 </p>
+                        <p>tel. +48 601 177 604</p>
                         <p>piotrwozniak@post.pl</p>
                     </div>
                 </div>

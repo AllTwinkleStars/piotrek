@@ -16,7 +16,7 @@ function GMap() {
     const center = useMemo(() => ({ lat: 50.06674982504129, lng: 19.962357301074857 }), []);
   
     return (
-        <div className="box-content relative pt-8 w-full h-[500px]">
+        <div className="relative pt-4 w-full h-[500px]">
             <GoogleMap 
                 zoom={17} 
                 center={center} 

@@ -1,39 +1,9 @@
 'use client';
 
 import Link from "next/link";
+import { data } from "@/app/data/data";
 
-const specializations = [
-    {
-        id: '1',
-        name: 'Prawo Cywilne',
-        href: '/specjalizacje/prawo-cywilne'
-    },
-    {
-        id: '2',
-        name: 'Prawo Rodzinne',
-        href: '/specjalizacje/prawo-rodzinne'
-    },
-    {
-        id: '3',
-        name: 'Odszkodowania',
-        href: '/specjalizacje/odszkodowania'
-    },
-    {
-        id: '4',
-        name: 'Księgi Wieczyste i Hipoteka',
-        href: '/specjalizacje/ksiegi-wieczyste-i-hipoteka'
-    },
-    {
-        id: '5',
-        name: 'Postępowanie Egzekucyjne',
-        href: '/specjalizacje/postepowanie-egzekucyjne'
-    },
-    {
-        id: '6',
-        name: 'Prawo Bankowe i Spółdzielcze',
-        href: '/specjalizacje/prawo-bankowe-i-spoldzielcze'
-    },
-]
+const specializations = data.filter(s => s.name === 'Specjalizacje')[0].sections;
 
 export default function SpecializationsMenu(){
 
