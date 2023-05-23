@@ -36,7 +36,7 @@ export const data = [
         },
         {
             id: 's4',
-            name: 'Księgi wieczyste i hipoteka',
+            name: 'Księgi wieczyste i hipoteka',
             href: '/specjalizacje/ksiegi-wieczyste-i-hipoteka'
         },
         {
@@ -46,7 +46,7 @@ export const data = [
         },
         {
             id: 's6',
-            name: 'Prawo bankowe i spółdzielcze',
+            name: 'Prawo bankowe i spółdzielcze',
             href: '/specjalizacje/prawo-bankowe-i-spoldzielcze'
         },
     ],
