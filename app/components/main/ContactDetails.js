@@ -4,7 +4,7 @@ export default function ContactDetails(){
             <p>                
                 ul. Kielecka 6, 31-516 Kraków<br/>
                 tel. +48 601 177 604<br/>
-                <a href="mailto:piotrwozniak@post.pl">
+                <a className="hover:underline hover:underline-offset-4 hover:decoration-1 hover:decoration-pw-gold" href="mailto:piotrwozniak@post.pl">
                     piotrwozniak@post.pl
                 </a>
             </p>
