@@ -34,9 +34,8 @@ export default function RootLayout({ children }) {
     return (
         <MenuContextProvider>
             <html lang="pl" className={`${sora.variable} ${ptserif.variable}`}>
-                <body className={`border-t-[16px] border-pw-gold overscroll-none`}>
+                <body className={`border-t-[16px] border-pw-gold overscroll-none pt-4 lg:pt-0`}>
                     <div className="max-w-[1366px] mx-auto">
-                        <div>
                             <Header />
 
                             <div className="flex justify-between gap-10 px-5 pb-10 xl:gap-20 md:px-14">
@@ -47,12 +46,12 @@ export default function RootLayout({ children }) {
                                 </div>
 
                                 {/* main column */}
-                                <main className="flex flex-col w-full gap-y-10">
+                                <main className="flex flex-col w-full gap-y-12">
                                     {children}
                                     <div className="lg:hidden">
                                         <SpecializationsMenu />
                                     </div>
-                                    <div className="text-left md:hidden">
+                                    <div className="text-left md:hidden shrink">
                                         <ContactDetails />
                                     </div>
                                 </main>
@@ -62,7 +61,6 @@ export default function RootLayout({ children }) {
                                     <SpecializationsMenu />
                                 </div>
                             </div>
-                        </div>
                     </div>
                     <footer className="hidden mt-8 lg:block">
                         <Footer />

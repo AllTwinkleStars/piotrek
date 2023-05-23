@@ -8,7 +8,7 @@ export default function Map() {
         googleMapsApiKey: process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY,
     });
 
-    return <>{!isLoaded ? <div>Loading...</div> : <GMap />}</>;
+    return <>{!isLoaded ? <div>Ładowanie...</div> : <GMap />}</>;
 };
 
 function GMap() {

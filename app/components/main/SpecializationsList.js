@@ -23,7 +23,7 @@ export default function SpecializationsMenu(){
             <h1 className="pb-4 text-xl font-normal tracking-wide lg:text-lg text-pw-gold">
                 <Link href="/specjalizacje">Specjalizacje</Link>
             </h1>
-            <div className="flex flex-col text-xs font-semibold tracking-wide uppercase text-pw-green">
+            <div className="flex flex-col text-sm font-semibold tracking-wide uppercase lg:text-xs text-pw-green">
                 {menuItems}
             </div>
         </div>

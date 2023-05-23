@@ -3,13 +3,11 @@
 import NavBar from "./NavBar";
 import { data } from "@/app/data/data";
 
-
-
 export default function Header() {
 
   return (
-    //TU WSTAWIĆ LOGO
     <header>
+        {/* TU WSTAWIĆ LOGO */}
         <NavBar pages={data} />
     </header>    
   );

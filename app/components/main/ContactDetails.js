@@ -1,12 +1,13 @@
 export default function ContactDetails(){
     return (
-        <div className="text-pw-green font-normal leading-[25px] tracking-wide text-md h-55 w-full self-center border-t-4 border-pw-gold pt-8">
+        <div className="w-full pt-8 pb-0 mt-8 text-base font-normal leading-7 tracking-wide border-t-4 md:leading-6 md:text-sm md:mt-0 text-pw-green h-55 border-pw-gold">
             <p>                
-            ul. Kielecka 6<br/>
-            31-516 Kraków<br/>
-            tel. +48 601 177 604<br/>
-            piotrwozniak@post.pl
+                ul. Kielecka 6, 31-516 Kraków<br/>
+                tel. +48 601 177 604<br/>
+                <a href="mailto:piotrwozniak@post.pl">
+                    piotrwozniak@post.pl
+                </a>
             </p>
         </div>
     )
-}
+}       

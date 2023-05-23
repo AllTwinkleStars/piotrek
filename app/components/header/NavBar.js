@@ -11,7 +11,6 @@ export default function NavBar({pages}) {
 
     const pathname = usePathname();
     
-
     const checkPath = (page) => {
         const regex = /\/.+(?=[/])|\/.*/i;
         return pathname.match(regex)[0] === page.href ? true : false;
@@ -36,14 +35,14 @@ export default function NavBar({pages}) {
         const isClicked = checkPath(page);
 
         return (
-                <Link 
-                    className={`text-2xl font-sans font-light tracking-wide py-1 ${isClicked ? "underline underline-offset-8 decoration-pw-gold decoration-4" : ""}`}
-                    key={page.id}
-                    href={page.href}
-                    onClick={() => setIsMenuOpen(!isMenuOpen)}>
-                    {page.menu}
-                </Link> 
-            )
+            <Link 
+                className={`text-2xl font-sans font-extralight tracking-wide py-1 ${isClicked ? "underline underline-offset-8 decoration-pw-gold decoration-4" : ""}`}
+                key={page.id}
+                href={page.href}
+                onClick={() => setIsMenuOpen(!isMenuOpen)}>
+                {page.menu}
+            </Link> 
+        )
     })
 
     const { isMenuOpen, setIsMenuOpen } = useMenuContext();
@@ -55,7 +54,7 @@ export default function NavBar({pages}) {
                 <div className="text-pw-green lg:pt-8 lg:mt-9">
                     <Logo />
                 </div>
-                <div className="bg-white text-pw-green font-semibold  h-9 justify-end gap-x-5 text-[14px] uppercase tracking-wide leading-7 hidden lg:flex">
+                <div className="bg-white text-pw-green font-semibold h-9 justify-end gap-x-5 text-[14px] uppercase tracking-wide leading-7 hidden lg:flex">
                     {navMenuItems}
                 </div>
                 <div className='self-start cursor-pointer lg:hidden' onClick={() => setIsMenuOpen(!isMenuOpen)}>
@@ -65,7 +64,7 @@ export default function NavBar({pages}) {
 
             {/* opened Navbar */}
             <div>
-                <div className={`z-50 flex flex-col justify-between top-0 fixed w-[100%] h-full px-5 md:px-[56px] pt-[42px] pb-4 bg-pw-green text-white lg:hidden ease-in-out duration-300 ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'}`}>
+                <div className={`z-50 flex flex-col justify-between top-0 fixed w-[100%] h-full px-5 md:px-[56px] pt-[56px] pb-4 bg-pw-green text-white lg:hidden ease-in-out duration-300 ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'}`}>
                     <div className='flex justify-between'>
                         <div>
                             <Logo />
@@ -77,10 +76,15 @@ export default function NavBar({pages}) {
                     <div className='flex flex-col gap-4'>
                         {hamMenuItems}           
                     </div>
-                    <div className='pb-4 text-white'>
-                        <p>ul. Kielecka 6, 31-516 Kraków</p>
-                        <p>tel. +48 601 177 604</p>
-                        <p>piotrwozniak@post.pl</p>
+                    <div className='pb-8 font-light leading-7 text-white'>
+                        <p>                
+                            ul. Kielecka 6<br/>
+                            31-516 Kraków<br/>
+                            tel. +48 601 177 604<br/>
+                            <a href="mailto:piotrwozniak@post.pl">
+                                piotrwozniak@post.pl
+                            </a>
+                        </p>
                     </div>
                 </div>
             </div>
