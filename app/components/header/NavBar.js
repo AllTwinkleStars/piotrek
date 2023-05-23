@@ -74,7 +74,7 @@ export default function NavBar({pages}) {
                             <IconClose/>
                         </div>
                     </div>
-                    <div className='flex flex-col gap-5'>
+                    <div className='flex flex-col gap-4'>
                         {hamMenuItems}           
                     </div>
                     <div className='pb-4 text-white'>
