@@ -23,7 +23,7 @@ export const ptserif = PT_Serif({
 
 export const metadata = {
   title: "Adwokat Piotr Tomasz Woźniak | Kancelaria Adwokacka Piotr Tomasz Woźniak",
-  description: "Coś mądrego na temat kancelarii",
+  description: "Prawo cywilne, prawo rodzine, odszkodowania, księgi wieczyste i hipoteka, postępowania egzekucyjne, prawo bankowe i spółdzielcze",
 };
 
 export default function RootLayout({ children }) {
@@ -35,9 +35,9 @@ export default function RootLayout({ children }) {
             <div>
               <Header />
 
-              <div className="flex justify-between gap-10 xl:gap-20 px-5 md:px-14 pb-10">
+              <div className="flex justify-between gap-10 px-5 pb-10 xl:gap-20 md:px-14">
                 {/* left column */}
-                <div className="hidden md:flex flex-col gap-y-10 shrink-0 w-55">
+                <div className="flex-col hidden md:flex gap-y-10 shrink-0 w-55">
                   <Photo />
                   <ContactDetails />
                 </div>
@@ -48,7 +48,7 @@ export default function RootLayout({ children }) {
                   <div className="lg:hidden">
                     <SpecializationsMenu />
                   </div>
-                  <div className="md:hidden text-left">
+                  <div className="text-left md:hidden">
                     <ContactDetails />
                   </div>
                 </div>
@@ -61,7 +61,7 @@ export default function RootLayout({ children }) {
             </div>
           </div>
 
-          <footer className="hidden lg:block mt-8">
+          <footer className="hidden mt-8 lg:block">
             <Footer />
           </footer>
         </body>
