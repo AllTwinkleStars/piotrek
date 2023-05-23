@@ -23,7 +23,7 @@ export default function NavBar({pages}) {
 
         return (
                 <Link 
-                    className={isClicked ? "border-b-4 border-pw-gold" : ""}
+                    className={isClicked ? "border-b-4 border-pw-gold" : "hover:text-pw-green-800"}
                     key={page.id} 
                     href={page.href}>
                     {page.name}
