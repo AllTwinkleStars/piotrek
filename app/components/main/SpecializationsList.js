@@ -40,7 +40,7 @@ export default function SpecializationsMenu(){
     const menuItems = specializations.map(specialization => {
         return (
             <Link 
-                className="border-t border-pw-gold py-3"
+                className="py-3 border-t border-pw-gold"
                 key={specialization.id} 
                 href={specialization.href}>
                 {specialization.name}
@@ -49,9 +49,9 @@ export default function SpecializationsMenu(){
     })
 
     return (
-        <div className="flex flex-col w-full h-fit pt-8 border-t-4 border-b border-pw-gold">
-            <h1 className="text-pw-gold pb-4 text-lg font-normal tracking-wide">Specjalizacje</h1>
-            <div className="text-pw-green text-xs font-semibold uppercase tracking-wide flex flex-col">
+        <div className="flex flex-col w-full pt-8 border-t-4 border-b h-fit border-pw-gold">
+            <h1 className="pb-4 text-lg font-normal tracking-wide text-pw-gold"><Link href="/specjalizacje">Specjalizacje</Link></h1>
+            <div className="flex flex-col text-xs font-semibold tracking-wide uppercase text-pw-green">
                 {menuItems}
             </div>
         </div>
