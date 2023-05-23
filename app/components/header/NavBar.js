@@ -52,7 +52,7 @@ export default function NavBar({pages}) {
         <nav>
             {/* closed Navbar */}
             <div className="z-50 flex justify-between px-5 pt-8 mb-12 md:px-14">
-                <div className="text-pw-green lg:border-t-4 border-pw-gold lg:pt-8 lg:mt-9">
+                <div className="text-pw-green lg:pt-8 lg:mt-9">
                     <Logo />
                 </div>
                 <div className="bg-white text-pw-green font-semibold  h-9 justify-end gap-x-5 text-[14px] uppercase tracking-wide leading-7 hidden lg:flex">
